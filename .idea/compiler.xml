@@ -7,6 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="apiAutomationudemy" />
+<<<<<<< HEAD
+=======
+        <module name="restAssuredUdemy" />
+>>>>>>> updated
       </profile>
     </annotationProcessing>
   </component>
