@@ -14,19 +14,9 @@ public class GoogleMapApiPlaceSearchGetRequest {
 
     @Test
     public void googlePlaceSearchUsingGetRequest() {
-<<<<<<< HEAD
+
         RestAssured.baseURI = "https://maps.googleapis.com/";
-        Response response =
-        given().
-                queryParam("location","-33.8670522,151.1957362").
-                queryParam("radius","1500").
-                queryParam("key","AIzaSyAltft1d2Oz5rdXIhE7-F6WCoANHv3z6ME").
-                when().
-                get("maps/api/place/nearbysearch/json").
-                then().
-=======
-        // set the base uri
-        RestAssured.baseURI = "https://maps.googleapis.com/";
+
         Response response =
         given().
                 queryParam("location","-33.8670522,151.1957362"). // pass the parameters as part of param or queryParam
@@ -35,7 +25,6 @@ public class GoogleMapApiPlaceSearchGetRequest {
                 when().
                 get("maps/api/place/nearbysearch/json"). // mention the request type
                 then(). // verification or assertion
->>>>>>> updated
                 assertThat().
                 statusCode(200).
                 and().
